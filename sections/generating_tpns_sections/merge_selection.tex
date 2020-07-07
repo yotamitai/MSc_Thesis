@@ -1,13 +1,31 @@
 \subsection{Merge Selection}
 \label{generating: merge selection}
-Consider the following configuration --- the naive TPN contains three TPSs $\pi_1,\pi_2,\pi_3$, and each path contains time points $e_1, e_2, e_3$ in $\pi_1, \pi_2, \pi_3$, respectively, such that $e_1$ is fully compatible with $e_2$ {\em or} $e_3$ but not with both.
-This scenario demonstrates the dilemma we now face --- which pairs of time points to merge? 
+Given a naive TPN and it's corresponding $\MergeSet$, our algorithm must now decide which 
+merge operations to initiate and at what order. 
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+     \textbf{Example:} Consider the following configuration --- the naive TPN contains three
+     TPSs $\pi_1,\pi_2,\pi_3$ and there exist time points 
+     $e_1, e_2, e_3$ in $\pi_1, \pi_2, \pi_3$, respectively, such that $e_1$ is fully
+     compatible with $e_2$ \textit{or} $e_3$ but not with both (i.e $m(e_2,e_3) \not \in \MergeSet$).
+     Therefore we must choose to either merge $e_1$ to $e_2$ or to merge $e_1$ to $e_3$.
+  \end{tcolorbox}
+
+
+The portrayed scenario demonstrates the dilemma we now face --- 
+which pairs of time points to merge? 
 
 
 %% CP
-\paragraph{Constraint Programming} To solve this optimization problem we call upon CP to maximize the number of merges we can apply to the naive TPN and formulate the problem as a COP.
-We define the set of all IHs participating in the optimization as $N$, in other words, these are all the {\em different} IHs appearing in $\MergeSet$.
-To mark a pair of IHs $a_i,a_j \in N$ as chosen to be merged together, we define the Boolean decision variable $m_{i,j}$. The set of all such variables is then $M \equiv \{m_{i,j} \mid \forall i,j \in N\}$.
+\subsubsection{Constraint Programming} To solve this optimization problem we call upon
+CP to maximize the number of merges we can apply to the naive TPN and formulate the 
+problem as a COP. \\ 
+
+We define the set of all IHs participating in the optimization as $N$, in other words,
+these are all the {\em different} IHs appearing in $\MergeSet$.
+To mark a pair of IHs $a_i,a_j \in N$ as chosen to be merged together, 
+we define the Boolean decision variable $m_{i,j}$. The set of all such variables is then
+ $M \equiv \{m_{i,j} \mid \forall i,j \in N\}$.
 
 Our objective is to create the smallest possible TPN, and this is done by merging {\em groups} of IHs. Thus, to formulate our optimization objective using the $m_{i,j}$ decision variables, we must create auxiliary decision variables for keeping track of groups. For example, merging $a_1, a_2$ and $a_3$ sets six decision variables to TRUE ($m_{1,2}, m_{2,1}, m_{1,3}, m_{3,1}, m_{2,3}$ and $m_{3,2})$, but only counts as one group.
 To do so we assign each IH the shared minimal index $i$ of its group.
