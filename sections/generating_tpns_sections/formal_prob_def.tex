@@ -1,0 +1,22 @@
+\section{Formal Problem Definition}
+\label{generating: formal prob def}
+
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black]
+\textit{Given a Temporal Planning task $\Pi = \langle F,A,I,G \rangle $ as input, we wish to generate a Temporal Planning Network (TPN) which represents multiple dissimilar plans that solve the task at hand.}
+\end{tcolorbox}
+
+
+\paragraph{Informally} we don't just want any TPN. We wish to generate a "good" TPN. 
+As no current methods for comparing TPNs exist, we chose in this work to focus on generating 
+the most compact TPN representation possible. To achieve this we will maximize the number of 
+points our process merges along the obtained diverse plans.
+
+While we are aware that other TPN attributes are also comparison-worthy, we advocate that smaller TPNs encode all the original plans compactly, reduce complexity by lowering the number of elements in the TPN and intuitively, are easier to communicate to a human counterpart. In addition, this objective steers towards a solution that requires more merges between the diverse plans, meaning more connections between them and as a result more flexibility during execution.
+
+\paragraph{}
+We note here that our work focuses primarily on the TPN time points $\mathcal{E}$ as these are the elements we wish to minimize in order to achieve the smallest TPN.
+
+Merging time points often leads to a new decision variables being generated. Different combinations of such decisions might lead to valid or invalid plans, thus, other possible optimization objectives could include generating TPNs with a high number of decision variable combinations, or which lead to a high number of valid plans. We leave optimizing these measures for future work.
+
+Additionally, Pike (the TPN executive) incorporates the ability to avoid making combinations of choices that lead to infeasible paths and so we do not trouble ourselves with addressing how these merges may affect the TPN constraints $C$.

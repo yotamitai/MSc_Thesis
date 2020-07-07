@@ -1,0 +1,47 @@
+\section{Motivation}
+\label{intro: Motivation}
+
+As technology progresses, robots are becoming more and more prevalent in everyday life. Be it physical robots such as an robotic arms and Roombas, or be it robotic agents such as Siri and Alexa. One of their great strengths is in being very efficient and able to execute precise operations and calculations in short time in a repeated and monotonous fashion. As their capabilities grow, so do we allow them to seep into more and more of complex fields such as medicine, economy and transportation. Areas such as these require not only precise and quick calculations but also the ability to handle uncertainty in real time. This uncertainty may stem from a dynamic environment or even from the need to work alongside a human counterpart.
+Unlike a sterilized factory floor, the world outside is dynamic and constantly on the move, be it through weather change, time of day lighting, moving objects etc.. 
+The number of unique situations such a robot can experience are practically limitless.
+How then can one configure a robot to deal with such a dynamic environment? How do we allow our agent to deal with uncertainty?
+
+Several approaches exist that tackle this very question. For the sake of clarity we will describe a scenario that will serve us as a running example throughout this thesis.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  \paragraph{Running Example: A Hard Day's Night.} \textit{Rob the robot has had a very long day at the plant and is looking forward to some quality time at home to charge his battery. Once he punches a hole in his worksheet and steps out the door he stops to think what route should he take home?}
+\end{tcolorbox}
+
+One common approach is to ``determinize and replan'' \cite{yoon2007ff}, that is, come up with a single plan which might solve the problem, start executing it, and if anything goes wrong --- replan.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  Rob decides to take the bus. He approaches the bus station and discovers that no buses are scheduled to arrive soon. Not a big fan of waiting, Rob decides to think of another way he can get home. After some thought Rob decides his next best option is to walk home - saving some money and breathing in some fresh air.
+\end{tcolorbox}
+
+Although this approach often works, it preforms poorly on  problems which are ``probabilistically interesting'' \cite{little2007probabilistic}, such as problems with avoidable dead-ends. In addition, replanning takes place in real-time i.e. during online execution and results in the agent being \emph{offline} for the duration. This is even more problematic in the case of human-robot teamwork, as the new plan will need to be communicated to the human every time replanning occurs.
+
+Another approach, on the other extreme, is to account for all possible uncertainty and come up with a contingent plan (e.g.,  \cite{hoffmann2005contingent}), which dictates what must occur in response to any possible uncertain outcome or disturbance.   
+Unfortunately, offline contingent planning is a computationally challenging problem, and this approach does not scale well.
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  While pondering how to commute home, Rob finds himself lost in thought about all the things that could go wrong with his plan. "What if the bus has a flat tire? What if the road is blocked? What if I fall and break my leg? what if..."  
+\end{tcolorbox}
+
+We advocate taking a middle-ground approach between 
+the two aforementioned methods by using flexible plans with choices. This scheme bestows our agent access to multiple pre-calculated solutions (plans) while allowing it to navigate between them freely by making \emph{choices} along the way, as it proceeds towards its goal.
+This way we are able to address an extent of the uncertainty as determined by the number of plans we include. 
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  Rob knows that there are many possible ways he can get home. He chooses several of them and notes to himself how he can transition between them in case something goes wrong. "I can go to the bus stop, if there aren't any buses soon I'll hop on a taxi. If the road is blocked I'll just start walking from there..."
+\end{tcolorbox}
+
+
+Specifically, we advocate using the Temporal Planning Networks formalism \cite{kim2001executing}, referred to as TPNs. TPNs were originally designed to control robotic space explorers. More recently, they have been demonstrated in the context of human-robot teamwork in an airplane manufacturing scenario \cite{Burke2014}, and in controlling micro-UAVs \cite{Timmons2015}.
+%
+The Pike executive \cite{levine2018watching}, which was used in both demonstrations mentioned above, executes TPNs by making choices for the robots, while monitoring execution and dispatching actions at the appropriate times using intent recognition and plan adaptation techniques.
+
+While the effectiveness of Pike and TPNs has been shown, both suffer from lack of presence in the industry. This can be associated with the fact that that generating TPNs has so far only been done by manually encoding them, a tedious job requiring a domain expert.
+Although it is possible to compile a control program written in the Reactive Model Planning Language (RMPL) \cite{ingham2001reactive} into a TPN, the control program must still be manually written.
+
+% In this work, we describe the first method for the automatic generation of a TPN, given a specification of a temporal planning problem in standard PDDL 2.1 \cite{fox2003pddl2}. 
+

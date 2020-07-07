@@ -1,0 +1,876 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{benton2012temporal}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=13a1d96d7362310154a97540c2f1b129}{%
+           family={Benton},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6291da7b71f679b2229515ebde83e096}{%
+           family={Coles},
+           familyi={C\bibinitperiod},
+           given={Amanda\bibnamedelima Jane},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=427527240209a555379fb41029f3096e}{%
+           family={Coles},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{018f6d056d56b3a53adeb37b29105a72}
+      \strng{fullhash}{018f6d056d56b3a53adeb37b29105a72}
+      \strng{bibnamehash}{018f6d056d56b3a53adeb37b29105a72}
+      \strng{authorbibnamehash}{018f6d056d56b3a53adeb37b29105a72}
+      \strng{authornamehash}{018f6d056d56b3a53adeb37b29105a72}
+      \strng{authorfullhash}{018f6d056d56b3a53adeb37b29105a72}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Second International Conference on Automated Planning and Scheduling, {ICAPS} 2012, Atibaia, S{ã}o Paulo, Brazil, June 25-19, 2012}
+      \field{title}{Temporal Planning with Preferences and Time-Dependent Continuous Costs}
+      \field{year}{2012}
+    \endentry
+    \entry{DBLP:conf/aips/BrafmanD08}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=000225cac485e5c923d61d5a78569b6a}{%
+           family={Brafman},
+           familyi={B\bibinitperiod},
+           given={Ronen\bibnamedelima I.},
+           giveni={R\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=718eb0c0fa1fcb9609baef6d48459a6d}{%
+           family={Domshlak},
+           familyi={D\bibinitperiod},
+           given={Carmel},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ad8bec5faf081ca98e9e74672b1393f}
+      \strng{fullhash}{2ad8bec5faf081ca98e9e74672b1393f}
+      \strng{bibnamehash}{2ad8bec5faf081ca98e9e74672b1393f}
+      \strng{authorbibnamehash}{2ad8bec5faf081ca98e9e74672b1393f}
+      \strng{authornamehash}{2ad8bec5faf081ca98e9e74672b1393f}
+      \strng{authorfullhash}{2ad8bec5faf081ca98e9e74672b1393f}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Eighteenth International Conference on Automated Planning and Scheduling, {ICAPS} 2008, Sydney, Australia, September 14-18, 2008}
+      \field{title}{From One to Many: Planning for Loosely Coupled Multi-Agent Systems}
+      \field{year}{2008}
+      \field{pages}{28\bibrangedash 35}
+      \range{pages}{8}
+    \endentry
+    \entry{bryce2014landmark}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=50c9e78537ee69ea3ddb7eb318cfa90f}{%
+           family={Bryce},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{50c9e78537ee69ea3ddb7eb318cfa90f}
+      \strng{fullhash}{50c9e78537ee69ea3ddb7eb318cfa90f}
+      \strng{bibnamehash}{50c9e78537ee69ea3ddb7eb318cfa90f}
+      \strng{authorbibnamehash}{50c9e78537ee69ea3ddb7eb318cfa90f}
+      \strng{authornamehash}{50c9e78537ee69ea3ddb7eb318cfa90f}
+      \strng{authorfullhash}{50c9e78537ee69ea3ddb7eb318cfa90f}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Fourth International Conference on Automated Planning and Scheduling, {ICAPS} 2014, Portsmouth, New Hampshire, USA, June 21-26, 2014}
+      \field{title}{Landmark-Based Plan Distance Measures for Diverse Planning}
+      \field{year}{2014}
+    \endentry
+    \entry{Burke2014}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=c2c559e205c1e5e570b15947a7653b51}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8309ef4b9b4f8887ebd27f9030e18871}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c920983f473b39f6075496f3abe9885c}{%
+           family={Figueredo},
+           familyi={F\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7ebeff8483e6963eba63cdbf8c1ba5e2}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a22f8b49b0f63501e242187817c35921}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9c49610279c849104500ef4db5c26b6c}{%
+           family={Karpas},
+           familyi={K\bibinitperiod},
+           given={Erez},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9bc2aa47df83b21e625456dd3798bda7}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=273a77d7f8b314a247dc533aef4f2df5}{%
+           family={Santana},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c476255801262401399b7c2ef207ff07}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=297608d5e43851d6d7da85cac54dc44e}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2950688a89e821b0ec017d1e692731d1}
+      \strng{fullhash}{9f34e2537d6cb0b1c4a0a296d52a231b}
+      \strng{bibnamehash}{2950688a89e821b0ec017d1e692731d1}
+      \strng{authorbibnamehash}{2950688a89e821b0ec017d1e692731d1}
+      \strng{authornamehash}{2950688a89e821b0ec017d1e692731d1}
+      \strng{authorfullhash}{9f34e2537d6cb0b1c4a0a296d52a231b}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICAPS Demo Track}
+      \field{title}{{Intent Recognition and Temporal Relaxation in Human Robot Assembly}}
+      \field{year}{2014}
+    \endentry
+    \entry{Coman2011GeneratingMetrics}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=e16316e2ad0d19bc8d072b9f82c263be}{%
+           family={Coman},
+           familyi={C\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b185b6487ccc4418537be4970c1f2df0}{%
+           family={Mu{ñ}oz-Avila},
+           familyi={M\bibinitperiod},
+           given={Hector},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+        {{hash=71dbeb61d23cc95a9613d414856523fe}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{AAAI} Press}%
+      }
+      \strng{namehash}{0644f618ed52a20428315ad11458eb08}
+      \strng{fullhash}{0644f618ed52a20428315ad11458eb08}
+      \strng{bibnamehash}{0644f618ed52a20428315ad11458eb08}
+      \strng{authorbibnamehash}{0644f618ed52a20428315ad11458eb08}
+      \strng{authornamehash}{0644f618ed52a20428315ad11458eb08}
+      \strng{authorfullhash}{0644f618ed52a20428315ad11458eb08}
+      \strng{editorbibnamehash}{d8d15a03edde1499e85658fca6953677}
+      \strng{editornamehash}{d8d15a03edde1499e85658fca6953677}
+      \strng{editorfullhash}{d8d15a03edde1499e85658fca6953677}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI} 2011, San Francisco, California, USA, August 7-11, 2011}
+      \field{title}{Generating Diverse Plans Using Quantitative and Qualitative Plan Distance Metrics}
+      \field{year}{2011}
+    \endentry
+    \entry{conrad2010flexible}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=9576cbba027cb538522490aa1c4f6460}{%
+           family={Conrad},
+           familyi={C\bibinitperiod},
+           given={Patrick\bibnamedelima Raymond},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Massachusetts Institute of Technology}%
+      }
+      \strng{namehash}{9576cbba027cb538522490aa1c4f6460}
+      \strng{fullhash}{9576cbba027cb538522490aa1c4f6460}
+      \strng{bibnamehash}{9576cbba027cb538522490aa1c4f6460}
+      \strng{authorbibnamehash}{9576cbba027cb538522490aa1c4f6460}
+      \strng{authornamehash}{9576cbba027cb538522490aa1c4f6460}
+      \strng{authorfullhash}{9576cbba027cb538522490aa1c4f6460}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Flexible execution of plans with choice and uncertainty}
+      \field{type}{phdthesis}
+      \field{year}{2010}
+    \endentry
+    \entry{dechter1991temporal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=78938a198b4931e837a6994d729d36f1}{%
+           family={Dechter},
+           familyi={D\bibinitperiod},
+           given={Rina},
+           giveni={R\bibinitperiod}}}%
+        {{hash=92791b3ae6b454667b66ed71e90da70d}{%
+           family={Meiri},
+           familyi={M\bibinitperiod},
+           given={Itay},
+           giveni={I\bibinitperiod}}}%
+        {{hash=809f695b398afbb54b544c49e8d1bbbb}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Judea},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7c3bc4b4dc7e358e6fe075540f400cf}
+      \strng{fullhash}{e7c3bc4b4dc7e358e6fe075540f400cf}
+      \strng{bibnamehash}{e7c3bc4b4dc7e358e6fe075540f400cf}
+      \strng{authorbibnamehash}{e7c3bc4b4dc7e358e6fe075540f400cf}
+      \strng{authornamehash}{e7c3bc4b4dc7e358e6fe075540f400cf}
+      \strng{authorfullhash}{e7c3bc4b4dc7e358e6fe075540f400cf}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artif. Intell.}
+      \field{number}{1-3}
+      \field{title}{Temporal Constraint Networks}
+      \field{volume}{49}
+      \field{year}{1991}
+      \field{pages}{61\bibrangedash 95}
+      \range{pages}{35}
+    \endentry
+    \entry{fox2003pddl2}{article}{}
+      \name{author}{2}{}{%
+        {{hash=64496cf21d6b05be76dc5359deb4cb9e}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e4030d413640a18f41ea68bab115087b}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a677f8da225540cab2da6a0a2d90221f}
+      \strng{fullhash}{a677f8da225540cab2da6a0a2d90221f}
+      \strng{bibnamehash}{a677f8da225540cab2da6a0a2d90221f}
+      \strng{authorbibnamehash}{a677f8da225540cab2da6a0a2d90221f}
+      \strng{authornamehash}{a677f8da225540cab2da6a0a2d90221f}
+      \strng{authorfullhash}{a677f8da225540cab2da6a0a2d90221f}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Artif. Intell. Res.}
+      \field{title}{{PDDL2.1:} An Extension to {PDDL} for Expressing Temporal Planning Domains}
+      \field{volume}{20}
+      \field{year}{2003}
+      \field{pages}{61\bibrangedash 124}
+      \range{pages}{64}
+    \endentry
+    \entry{gecode}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=63a5d22d7f83477d3e7c8b847c41d91e}{%
+           family={{Gecode Team}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{63a5d22d7f83477d3e7c8b847c41d91e}
+      \strng{fullhash}{63a5d22d7f83477d3e7c8b847c41d91e}
+      \strng{bibnamehash}{63a5d22d7f83477d3e7c8b847c41d91e}
+      \strng{authorbibnamehash}{63a5d22d7f83477d3e7c8b847c41d91e}
+      \strng{authornamehash}{63a5d22d7f83477d3e7c8b847c41d91e}
+      \strng{authorfullhash}{63a5d22d7f83477d3e7c8b847c41d91e}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Available from \texttt{http://www.gecode.org}}
+      \field{title}{Gecode: Generic Constraint Development Environment}
+      \field{year}{2020}
+    \endentry
+    \entry{PDDL}{article}{}
+      \name{author}{12}{}{%
+        {{hash=d4b01a4cf3a9690cd8e7bb1a53071daf}{%
+           family={Ghallab},
+           familyi={G\bibinitperiod},
+           given={Malik},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b7e2206d58af745bf112a1c17517336c}{%
+           family={Knoblock},
+           familyi={K\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d80e3b83791ba97da18f7a610dc7cc9a}{%
+           family={Wilkins},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3d414591699f2e4d5f317a6502417f36}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=383702f38612cc11ea9ddb6f9fe79fa3}{%
+           family={Christianson},
+           familyi={C\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=44726cb7aa5f0126c2922da507fc909c}{%
+           family={Friedman},
+           familyi={F\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5a880aeedc6ac8aa07d0875e09e52445}{%
+           family={Kwok},
+           familyi={K\bibinitperiod},
+           given={Chung},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4eac4edcdde2a8c96d2eaef47b8a4551}{%
+           family={Golden},
+           familyi={G\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=817e40455bca87c85d4bf52a140abe08}{%
+           family={Penberthy},
+           familyi={P\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5dae92275f3afda5b0b3da88efb93844}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6ec9054114121c22d3126abe383873b8}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ca4142849ba872b1d80e5336e7376ca2}{%
+           family={Weld},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{391f69ca49373b5e0aee090616188436}
+      \strng{fullhash}{7413daa4d4102d15c027fdde7676176b}
+      \strng{bibnamehash}{391f69ca49373b5e0aee090616188436}
+      \strng{authorbibnamehash}{391f69ca49373b5e0aee090616188436}
+      \strng{authornamehash}{391f69ca49373b5e0aee090616188436}
+      \strng{authorfullhash}{7413daa4d4102d15c027fdde7676176b}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{PDDL - The Planning Domain Definition Language}
+      \field{year}{1998}
+    \endentry
+    \entry{hoffmann2005contingent}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=330c5e7bb627c866984265b62cc1ab03}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={J{ö}rg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=092db084992c6b37e162bc2a5ea824c9}{%
+           family={Brafman},
+           familyi={B\bibinitperiod},
+           given={Ronen},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bc4fb8762d8d202d573ae5efd4e9fd0}
+      \strng{fullhash}{4bc4fb8762d8d202d573ae5efd4e9fd0}
+      \strng{bibnamehash}{4bc4fb8762d8d202d573ae5efd4e9fd0}
+      \strng{authorbibnamehash}{4bc4fb8762d8d202d573ae5efd4e9fd0}
+      \strng{authornamehash}{4bc4fb8762d8d202d573ae5efd4e9fd0}
+      \strng{authorfullhash}{4bc4fb8762d8d202d573ae5efd4e9fd0}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. ICAPS}
+      \field{title}{Contingent planning via heuristic forward search with implicit belief states}
+      \field{volume}{2005}
+      \field{year}{2005}
+    \endentry
+    \entry{ingham2001reactive}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ece2bad17f65d957191405b8934e1e12}{%
+           family={Ingham},
+           familyi={I\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=178124c17e966ee88df0af94aafe35c1}{%
+           family={Ragno},
+           familyi={R\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0e89dd05fb0e2e95f6f0dc786689c0b7}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima C},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{51ec61756d6c5ee1b2fa797780907f6b}
+      \strng{fullhash}{51ec61756d6c5ee1b2fa797780907f6b}
+      \strng{bibnamehash}{51ec61756d6c5ee1b2fa797780907f6b}
+      \strng{authorbibnamehash}{51ec61756d6c5ee1b2fa797780907f6b}
+      \strng{authornamehash}{51ec61756d6c5ee1b2fa797780907f6b}
+      \strng{authorfullhash}{51ec61756d6c5ee1b2fa797780907f6b}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of ISAIRAS-01}
+      \field{title}{A reactive model-based programming language for robotic space explorers}
+      \field{year}{2001}
+    \endentry
+    \entry{katz2019reshaping}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6c6bfa1098d4ff07b1c8d633bcbc1eb0}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4f2820702f2123fbe10142617094b124}{%
+           family={Sohrabi},
+           familyi={S\bibinitperiod},
+           given={Shirin},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{446ba52018022f98b8b53bddd3acb3e9}
+      \strng{fullhash}{446ba52018022f98b8b53bddd3acb3e9}
+      \strng{bibnamehash}{446ba52018022f98b8b53bddd3acb3e9}
+      \strng{authorbibnamehash}{446ba52018022f98b8b53bddd3acb3e9}
+      \strng{authornamehash}{446ba52018022f98b8b53bddd3acb3e9}
+      \strng{authorfullhash}{446ba52018022f98b8b53bddd3acb3e9}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{HSDIP 2019}
+      \field{title}{Reshaping Diverse Planning: Let There Be Light!}
+      \field{year}{2019}
+      \field{pages}{1}
+      \range{pages}{1}
+    \endentry
+    \entry{katz2018novel}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6c6bfa1098d4ff07b1c8d633bcbc1eb0}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4f2820702f2123fbe10142617094b124}{%
+           family={Sohrabi},
+           familyi={S\bibinitperiod},
+           given={Shirin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=55a1c24df6366490357a44febb224b10}{%
+           family={Udrea},
+           familyi={U\bibinitperiod},
+           given={Octavian},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b0488105dbdbdd89fb4cfd541d45650b}{%
+           family={Winterer},
+           familyi={W\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb24c72eecb6fb5a52a3f01bd209da47}
+      \strng{fullhash}{4a9895b51496ebabb8b4008999bb46f3}
+      \strng{bibnamehash}{fb24c72eecb6fb5a52a3f01bd209da47}
+      \strng{authorbibnamehash}{fb24c72eecb6fb5a52a3f01bd209da47}
+      \strng{authornamehash}{fb24c72eecb6fb5a52a3f01bd209da47}
+      \strng{authorfullhash}{4a9895b51496ebabb8b4008999bb46f3}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Eighth International Conference on Automated Planning and Scheduling, {ICAPS} 2018, Delft, The Netherlands, June 24-29, 2018}
+      \field{title}{A Novel Iterative Approach to Top-k Planning}
+      \field{year}{2018}
+      \field{pages}{132\bibrangedash 140}
+      \range{pages}{9}
+    \endentry
+    \entry{kim2001executing}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=4420bc96821de11936fef32e1dfbd8cf}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0e89dd05fb0e2e95f6f0dc786689c0b7}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=662921a52f6bdee4dfe27d3cb805c7c9}{%
+           family={Abramson},
+           familyi={A\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{733ef6fe963f1bde99e04c568a99bd43}
+      \strng{fullhash}{733ef6fe963f1bde99e04c568a99bd43}
+      \strng{bibnamehash}{733ef6fe963f1bde99e04c568a99bd43}
+      \strng{authorbibnamehash}{733ef6fe963f1bde99e04c568a99bd43}
+      \strng{authornamehash}{733ef6fe963f1bde99e04c568a99bd43}
+      \strng{authorfullhash}{733ef6fe963f1bde99e04c568a99bd43}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Seventeenth International Joint Conference on Artificial Intelligence, {IJCAI} 2001, Seattle, Washington, USA, August 4-10, 2001}
+      \field{title}{Executing Reactive, Model-based Programs through Graph-based Temporal Planning}
+      \field{year}{2001}
+      \field{pages}{487\bibrangedash 493}
+      \range{pages}{7}
+    \endentry
+    \entry{levine2018watching}{article}{}
+      \name{author}{2}{}{%
+        {{hash=601e8d5293a281029109dc453fe946a2}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima James},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2a0d44bd8235454ad7c461091eed2963}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima Charles},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0fcee81bc0e6480af1c4d7d1289838ee}
+      \strng{fullhash}{0fcee81bc0e6480af1c4d7d1289838ee}
+      \strng{bibnamehash}{0fcee81bc0e6480af1c4d7d1289838ee}
+      \strng{authorbibnamehash}{0fcee81bc0e6480af1c4d7d1289838ee}
+      \strng{authornamehash}{0fcee81bc0e6480af1c4d7d1289838ee}
+      \strng{authorfullhash}{0fcee81bc0e6480af1c4d7d1289838ee}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Artif. Intell. Res.}
+      \field{title}{Watching and Acting Together: Concurrent Plan Recognition and Adaptation for Human-Robot Teams}
+      \field{volume}{63}
+      \field{year}{2018}
+      \field{pages}{281\bibrangedash 359}
+      \range{pages}{79}
+    \endentry
+    \entry{little2007probabilistic}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=76d0ff3d3eec8fb1325adf7818eff934}{%
+           family={Little},
+           familyi={L\bibinitperiod},
+           given={Iain},
+           giveni={I\bibinitperiod}}}%
+        {{hash=52dd6fef25b8835673d781d8b9bd543f}{%
+           family={Thiebaux},
+           familyi={T\bibinitperiod},
+           given={Sylvie},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{db6a52c8d41ad48919d55bda909cd195}
+      \strng{fullhash}{db6a52c8d41ad48919d55bda909cd195}
+      \strng{bibnamehash}{db6a52c8d41ad48919d55bda909cd195}
+      \strng{authorbibnamehash}{db6a52c8d41ad48919d55bda909cd195}
+      \strng{authornamehash}{db6a52c8d41ad48919d55bda909cd195}
+      \strng{authorfullhash}{db6a52c8d41ad48919d55bda909cd195}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICAPS Workshop on IPC: Past, Present and Future}
+      \field{title}{Probabilistic planning vs. replanning}
+      \field{year}{2007}
+    \endentry
+    \entry{nethercote2007minizinc}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=5f499e187f509a382d6312d52a946cc7}{%
+           family={Nethercote},
+           familyi={N\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=763c041036682c7c20675dab8c437fb0}{%
+           family={Stuckey},
+           familyi={S\bibinitperiod},
+           given={Peter\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=381d9a2502d443367d06e842286a9bb4}{%
+           family={Becket},
+           familyi={B\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7cb3eba3813915d00959121b889ecb80}{%
+           family={Brand},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=061782a4c9d7d06c40a4ff31b96da725}{%
+           family={Duck},
+           familyi={D\bibinitperiod},
+           given={Gregory\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f4ecd3e607538c8de706243236279c77}{%
+           family={Tack},
+           familyi={T\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{225e1a29b922f608bdcac60ce73a42dd}
+      \strng{fullhash}{443ee2455176442e986a4376bed60287}
+      \strng{bibnamehash}{225e1a29b922f608bdcac60ce73a42dd}
+      \strng{authorbibnamehash}{225e1a29b922f608bdcac60ce73a42dd}
+      \strng{authornamehash}{225e1a29b922f608bdcac60ce73a42dd}
+      \strng{authorfullhash}{443ee2455176442e986a4376bed60287}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Principles and Practice of Constraint Programming - {CP} 2007, 13th International Conference, {CP} 2007, Providence, RI, USA, September 23-27, 2007, Proceedings}
+      \field{title}{MiniZinc: Towards a Standard {CP} Modelling Language}
+      \field{year}{2007}
+      \field{pages}{529\bibrangedash 543}
+      \range{pages}{15}
+    \endentry
+    \entry{nguyen2012generating}{article}{}
+      \name{author}{6}{}{%
+        {{hash=abbfa1ec397d042638e3f8bb730c695f}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tuan\bibnamedelima Anh},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=13d40124c51017eb5ea29aeaf18c0528}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Minh\bibnamedelima Binh},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=67230c149f4e34c16632c10accf8251b}{%
+           family={Gerevini},
+           familyi={G\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8b9c3bf041312d7b54ac9aacbf070d55}{%
+           family={Serina},
+           familyi={S\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=875140db7fb95f3a8bfc98683a2eeb4e}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Biplav},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7b2a9fc9e6a7ab9c84859fc6b27855a5}{%
+           family={Kambhampati},
+           familyi={K\bibinitperiod},
+           given={Subbarao},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e729b3b5f4c5f80b6697dd5e1ad52be3}
+      \strng{fullhash}{57ee0163e4ad8884dd881ce8507b7951}
+      \strng{bibnamehash}{e729b3b5f4c5f80b6697dd5e1ad52be3}
+      \strng{authorbibnamehash}{e729b3b5f4c5f80b6697dd5e1ad52be3}
+      \strng{authornamehash}{e729b3b5f4c5f80b6697dd5e1ad52be3}
+      \strng{authorfullhash}{57ee0163e4ad8884dd881ce8507b7951}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artif. Intell.}
+      \field{title}{Generating diverse plans to handle unknown and partially known user preferences}
+      \field{volume}{190}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 31}
+      \range{pages}{31}
+    \endentry
+    \entry{srivastava2007domain}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=875140db7fb95f3a8bfc98683a2eeb4e}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Biplav},
+           giveni={B\bibinitperiod}}}%
+        {{hash=abbfa1ec397d042638e3f8bb730c695f}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tuan\bibnamedelima Anh},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=67230c149f4e34c16632c10accf8251b}{%
+           family={Gerevini},
+           familyi={G\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7b2a9fc9e6a7ab9c84859fc6b27855a5}{%
+           family={Kambhampati},
+           familyi={K\bibinitperiod},
+           given={Subbarao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=13d40124c51017eb5ea29aeaf18c0528}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Minh\bibnamedelima Binh},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=8b9c3bf041312d7b54ac9aacbf070d55}{%
+           family={Serina},
+           familyi={S\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{537aacb461435db727fc992a76ca311c}
+      \strng{fullhash}{e93573c7dbeed8b0c47bb70c279183a6}
+      \strng{bibnamehash}{537aacb461435db727fc992a76ca311c}
+      \strng{authorbibnamehash}{537aacb461435db727fc992a76ca311c}
+      \strng{authornamehash}{537aacb461435db727fc992a76ca311c}
+      \strng{authorfullhash}{e93573c7dbeed8b0c47bb70c279183a6}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{IJCAI} 2007, Proceedings of the 20th International Joint Conference on Artificial Intelligence, Hyderabad, India, January 6-12, 2007}
+      \field{title}{Domain Independent Approaches for Finding Diverse Plans}
+      \field{year}{2007}
+      \field{pages}{2016\bibrangedash 2022}
+      \range{pages}{7}
+    \endentry
+    \entry{Timmons2015}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=ca9936106da295d1e35ef73407b7dcfd}{%
+           family={Timmons},
+           familyi={T\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bf93e4f3c6ddd46f1ad3bf7f1bb127db}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a2d021440b773e0c9cc978a29fafbed6}{%
+           family={Fernandez-Gonzalez},
+           familyi={F\bibinithyphendelim G\bibinitperiod},
+           given={Enrique},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9c49610279c849104500ef4db5c26b6c}{%
+           family={Karpas},
+           familyi={K\bibinitperiod},
+           given={Erez},
+           giveni={E\bibinitperiod}}}%
+        {{hash=94b8690b9cc7b7f034b8a6e5d2a92f28}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=273a77d7f8b314a247dc533aef4f2df5}{%
+           family={Santana},
+           familyi={S\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=93a95aed473f496c16fa8f1fe5b75054}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4911bd9bb240c6d5f12db3d850ad1099}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c476255801262401399b7c2ef207ff07}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0e89dd05fb0e2e95f6f0dc786689c0b7}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Brian\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{605012f17e933b4579ed8d28f528f89d}
+      \strng{fullhash}{578e887306880e04197083560b913b7a}
+      \strng{bibnamehash}{605012f17e933b4579ed8d28f528f89d}
+      \strng{authorbibnamehash}{605012f17e933b4579ed8d28f528f89d}
+      \strng{authornamehash}{605012f17e933b4579ed8d28f528f89d}
+      \strng{authorfullhash}{578e887306880e04197083560b913b7a}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICAPS Demo Track}
+      \field{title}{Reactive Model-based Programming of Micro-UAVs}
+      \field{year}{2015}
+    \endentry
+    \entry{yoon2007ff}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=da4988f3249a283e5cfce263921cf9f7}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Sung\bibnamedelima Wook},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b95adb6034de42a9e024e9e4dab80197}{%
+           family={Fern},
+           familyi={F\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=15e6c2c22192d2b773c8c965c435b427}{%
+           family={Givan},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d1b905252e3767d5215c7a21f748f1d}
+      \strng{fullhash}{3d1b905252e3767d5215c7a21f748f1d}
+      \strng{bibnamehash}{3d1b905252e3767d5215c7a21f748f1d}
+      \strng{authorbibnamehash}{3d1b905252e3767d5215c7a21f748f1d}
+      \strng{authornamehash}{3d1b905252e3767d5215c7a21f748f1d}
+      \strng{authorfullhash}{3d1b905252e3767d5215c7a21f748f1d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Seventeenth International Conference on Automated Planning and Scheduling, {ICAPS} 2007, Providence, Rhode Island, USA, September 22-26, 2007}
+      \field{title}{FF-Replan: {A} Baseline for Probabilistic Planning}
+      \field{year}{2007}
+      \field{pages}{352}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

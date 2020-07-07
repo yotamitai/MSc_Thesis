@@ -1,0 +1,37 @@
+\section{TPNs \& Pike}
+\label{background: tpns and Pike}
+
+A Temporal Planning Network (TPN) is a formalism for representing flexible plans with choices. A TPN is an extension to the Simple Temporal Network \cite{dechter1991temporal}, which adds decision nodes and labels on constraints conditioned on these decisions (also referred to as choices). 
+We shall build upon (but simplify) the definition supplied in \cite{levine2018watching} for a Temporal Planning Network under Uncertainty (TPNU), as this is the formalism Pike expects as input. The main difference between a TPN and a TPNU being the mapping of the choice variables to groups of controllable and uncontrollable choices, i.e. which choices does Pike initiate and which does the environment. Formally a TPNU is a tuple $\langle V, \mathcal{E}, C, A\rangle$, where:
+% \vspace{-0.5mm}
+\begin{itemize}
+    \item $V$: The set of decision variables.
+    Decision variables are partitioned into two groups $V = V_C \cup V_U$.
+    Each $v \in V$ is a discrete variable with a finite domain $Domain(v)$. $V_C$ are \textit{controllable}
+    choices, decidable by the executive at run time. $V_U$ are the \textit{uncontrollable} choice variables, whose decisions are determined by the human or nature, rather than the executive.
+    
+    \item $\mathcal{E}$: The set of notable time points (Events).
+    Each $e \in \mathcal{E}$ is associated with a conjunction of choice variable assignments $\varphi_e$. 
+    Events can be seen as correlated to the underlying PDDL states of the original task.
+    
+    \item $C$: The set of temporal constraints. Each $c \in C$ is a tuple $\langle e_s, e_f, l, u, \varphi_c \rangle$ where $e_s$ is the \textit{start} event, $e_f$ is the \textit{finish} event, $\varphi_c$ is a conjunction of choice variable assignments and $l,u \in \mathbb{R}$  represent temporal upper and lower bounds s.t. $\varphi_c \implies (l\leq e_f - e_s \leq u)$. 
+    
+    \item $\mathbb{A}$: The set of activities. An activity $a \in \mathbb{A}$ is a tuple $\langle c,\alpha \rangle$ where $c \in C$ is a temporal constraint, and $\alpha$ is an action that will be executed online. With $c = \langle e_s, e_f, l, u, \varphi_c \rangle$, action $\alpha$ starts when $e_s$ is scheduled, and terminates when $e_f$ is scheduled. We require that $l >0$
+    Activities are related to the durative actions of the underlying PDDL domain.
+    
+\end{itemize}
+We note that in this work we only generate TPNs, i.e. there is no assignment of choices to the uncontrollable set. The task of determining which choices are uncontrollable is a subject for future work.
+
+\subsection*{Pike}
+\label{intro: Pike}
+
+Pike \cite{levine2018watching} is an online plan executive for human-robot teamwork that quickly adapts and infers intent based on the preconditions of actions in the plan, temporal constraints, unanticipated disturbances, and choices made previously (by either robot or human). It achieves plan recognition and adaptation concurrently through a single set of algorithms.
+Pike takes as input a flexible plan with choices defined using the TPNU formalism. During execution, Pike makes use of a state estimator and activity recognition module for additional inputs in order to access and respond to state disturbances and recognize
+the choices made by the human counterpart. Using these inputs Pike infers his team-mate's intent by reasoning about the uncontrollable choices, and makes the controllable choices such that the end-goal will be achieved.
+Using Pike to control robots results in a mixed initiative execution in which humans and robots simultaneously work and adapt to each other to accomplish a task.\\
+In order to dispatch activities at their proper times, which
+may also depend on the choices made, Pike leverages ideas
+originally presented in the Drake executive \cite{conrad2010flexible}.
+A labeled all-pairs shortest path (APSP) is computed on
+the TPNU, to determine which events occur before which
+other events. This labeled APSP is used as a dispatchable form for execution.

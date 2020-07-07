@@ -1,0 +1,28 @@
+\usepackage{tabularx, graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{rotating}
+\usepackage{mathtools, amssymb, bbm}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% linguistic package
+\usepackage[english]{babel}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\newcommand{\MergeSet}{\mathbb{M}}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning, automata}
+\tikzset{
+    -Latex,auto,node distance =1 cm and 1 cm,semithick,
+    state/.style ={ellipse, draw, minimum width = 0.7 cm},
+    point/.style = {circle, draw, inner sep=0.04cm,fill,node contents={}},
+    bidirected/.style={Latex-Latex,dashed},
+    el/.style = {inner sep=2pt, align=left, sloped}
+}
+
+\addbibresource{general.bib}

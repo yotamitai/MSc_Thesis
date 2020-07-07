@@ -1,0 +1,25 @@
+\chapter{Automatically Generating Temporal Planning Networks}
+\label{chap: generating TPNS}
+
+\paragraph{}Now that we have supplied the relevant motivation and background for the task at hand, we can further define the problem which we wish to solve. 
+
+\input{sections/generating_tpns_sections/formal_prob_def.tex}
+
+\paragraph{}We are now ready to start getting our hands dirty and describe how we tackle this problem. 
+\input{sections/generating_tpns_sections/methods.tex}
+
+
+\paragraph{}First off, we describe our devised approach to Diverse Temporal Planning.
+\input{sections/generating_tpns_sections/diverse_temporal_planning.tex}
+
+
+\paragraph{}With a set of diverse TPSs $\{\pi_1 \ldots \pi_k\}$ at hand for our input planning task $\Pi$, we can dive in to tackling how to merge these into a single TPN representation, that compactly encodes all generated solutions and possibly more.
+\input{sections/generating_tpns_sections/merging.tex}
+
+
+\paragraph{} Once $\MergeSet$ has been acquired, we require a method to determine which merge operations to execute. The reason for this necessity is that the merge operations in $\MergeSet$ are only compatible by definition in the naive TPN.
+\input{sections/generating_tpns_sections/merge_selection.tex}
+
+
+\paragraph{} \centering This concludes our TPN generating process.\\
+\centering we now showcase it's empirical results.\\

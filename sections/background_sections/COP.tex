@@ -1,0 +1,33 @@
+\section{Constraint Optimization}
+\label{background: COP}
+A Constraint Optimization Problem (COP) is a mathematical optimization question defined by an objective function with respect to some variables in the presence of constraints on those variables. 
+These constraints can either be strictly required (hard constraints) or have variable range values for which to be penalized to an extent based on the conditions that are not satisfied (soft constraints).
+
+A solution to a COP is a mapping from each variable to a value, selected from a finite domain, s.t. the objective functions achieves it's desired value, be it minimal for such problems as reducing cost or energy usage, or maximal for accumulating reward or raising utility.
+The constraints of the problem limit the variable values that can be assigned simultaneously.
+
+Formally a COP is a tuple $\langle X,D,C,O\rangle$: 
+\begin{table}[ht!]
+\centering
+\begin{tabularx}{\textwidth}{ c  X }
+
+\textbf{Var}  & \textbf{Definition} \\
+\hline
+\\
+$X$:     & \ {The set of variables.}  \\
+\\
+$D$:     & {The set of their respective domains of values. }       \\
+\\
+$C$:     & {The set of constraints.}      \\
+$O$:     & {The objective function.}      \\
+\\
+
+\end{tabularx}
+\caption{Constrain Optimization Problem}
+\label{tab:COP}
+\end{table}
+
+
+Further on, in chapter \ref{chap: generating TPNS},  when constructing a TPN out of the diverse solutions we obtain, we will model the question of which time-points to merge between plans, such as to maximize our TPN's utility, as a COP.
+
+% In this work we have made use of the MiniZinc \cite{nethercote2007minizinc} formalism while solving the COP running the Geocode \cite{gecode} solver.
