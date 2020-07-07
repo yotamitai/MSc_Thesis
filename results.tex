@@ -1,52 +1,78 @@
 \chapter{Results}
 \label{chap: results}
 
-%% TABLE
-% \begin{sidewaystable}[ht]
-% \centering
-% \resizebox{1\textwidth}{!}{
-% \begin{tabular}{|l|rr|rr|r||rr|rr|r||rr|rr|r|||rr|rr|r||rr|rr|r||rr|rr|r|}
+% TABLE
+\begin{table}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|rr|rr|r||rr|rr|r||rr|rr|r|}
+\hline
+ & \multicolumn{15}{c|}{ \#S }\\
+\hline
+\#Solutions & \multicolumn{5}{c||}{ k=2 } & \multicolumn{5}{c||}{ k=4 } & \multicolumn{5}{c|}{ k=8 }\\
+\hline
+Transitivity & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#N }
+& \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#N } 
+& \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c|}{ \#N }\\
+\hline
+Compatibility & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
+\multicolumn{1}{c||}{-} & 
+\multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
+\multicolumn{1}{c||}{-} & 
+\multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
+\multicolumn{1}{c|}{-}\\ 
+\hline
+crewplanning(30) & 5 & 5 & 5 & 5 & 25 & 5 & 5 & 5 & 5 & 25 & 2 & 0 & 3 & 1 & 22 \\ 
+parking(10) & 8 & 8 & 8 & 8 & 9 & 9 & 9 & 9 & 9 & 9 & 6 & 6 & 6 & 6 & 6 \\ 
+quantum circuit(10) & 5 & 5 & 5 & 5 & 8 & 5 & 5 & 5 & 5 & 6 & 5 & 5 & 5 & 5 & 5 \\
+trucks(10) & 8 & 8 & 8 & 8 & 10 & 10 & 9 & 10 & 10 & 10 & 8 & 8 & 9 & 9 & 10 \\ 
+turn and open(20) & 2 & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 \\ 
+\hline
+Total  & 28 & 28 & 28 & 28 & 54 & 30 & 29 & 30 & 30 & 51 & 21 & 19 & 24 & 21 & 44\\
+\hline
+\end{tabular}
+}
+\caption{Empirical results table: Success Counts}
+\label{table: results - success}
+\end{table}
 
-% \hline
-%  & \multicolumn{15}{c|||}{ \#S } & \multicolumn{15}{c|}{Compactness}\\
-% \hline
-% \#Solutions & \multicolumn{5}{c||}{ k=2 } & \multicolumn{5}{c||}{ k=4 } & \multicolumn{5}{c|||}{ k=8 } & \multicolumn{5}{c||}{ k=2 } & \multicolumn{5}{c||}{ k=4 } & \multicolumn{5}{c|}{ k=8 } \\
-% \hline
-% Transitivity & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#N } & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#N } & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c|||}{ \#N } & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#P } & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#P } & \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c|}{ \#P }\\
-% \hline
-% Compatibility & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S}
-% & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
-% \multicolumn{1}{c||}{-} & 
-% \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
-% \multicolumn{1}{c||}{-} & 
-% \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
-% \multicolumn{1}{c|||}{-} & 
-% \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
-% \multicolumn{1}{c||}{-} & 
-% \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
-% \multicolumn{1}{c||}{-} & 
-% \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
-% \multicolumn{1}{c|}{-}\\
-% \hline
-% crewplanning(30) & 5 & 5 & 5 & 5 & 25 & 5 & 5 & 5 & 5 & 25 & 2 & 0 & 3 & 1 & 22 & 0.017 & 0.116 & 0.017 & 0.113 & 5 & 0.185 & 0.175 & 0.185 & 0.178 & 5 & - & - & - & - & 0 \\
-% parking(10) & 8 & 8 & 8 & 8 & 9 & 9 & 9 & 9 & 9 & 9 & 6 & 6 & 6 & 6 & 6 & 0.042 & 0.042 & 0.042 & 0.042 & 8 & 0.09 & 0.098 & 0.09 & 0.098 & 9 & 0.117 & 0.122 & 0.102 & 0.111 & 6\\
-% quantom circuit(10) & 5 & 5 & 5 & 5 & 8 & 5 & 5 & 5 & 5 & 6 & 5 & 5 & 5 & 5 & 5 & 0.035 & 0.035 & 0.035 & 0.035 & 5 & 0.072 & 0.072 & 0.072 & 0.079 & 5 & 0.131 & 0.126 & 0.066 & 0.075 & 5\\
-% trucks(10) & 8 & 8 & 8 & 8 & 10 & 10 & 9 & 10 & 10 & 10 & 8 & 8 & 9 & 9 & 10 & 0.05 & 0.081 & 0.05 & 0.077 & 8 & 0.059 & 0.063 & 0.056 & 0.058 & 9 & 0.066 & 0.048 & 0.032 & 0.023 & 8 \\
-% turn and open(20) & 2 & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0.03 & 0.057 & 0.03 & 0.065 & 2 & 0.16 & 0.043 & 0.014 & 0.02 & 1 & - & - & - & - & 0 \\
-% \hline
-% \; Total \;$|$\;Avg & 28 & 28 & 28 & 28 & 54 & 30 & 29 & 30 & 30 & 51 & 21 & 19 & 24 & 21 & 44 & 0.035 & 0.066 & 0.035 & 0.066 & 28 & 0.113 & 0.09 & 0.083 & 0.087 & 29 & 0.105 & 0.099 &	0.067 &	0.07 & 19\\ 
-% \hline
-% \end{tabular}
-% }
-% \vspace{-3mm}
-% \caption{Summary of Empirical Results}
-% \label{table: table}
-% \vspace{-6mm}
-% \end{sidewaystable}
-% %\vspace{-1em}
+\begin{table}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|rr|rr|r||rr|rr|r||rr|rr|r|}
+\hline
+    & \multicolumn{15}{c|}{Compactness}\\
+\hline
+\#Solutions & \multicolumn{5}{c||}{ k=2 } & \multicolumn{5}{c||}{ k=4 } & \multicolumn{5}{c|}{ k=8 }\\
+\hline
+Transitivity &  \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#P } 
+& \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c||}{ \#P }
+& \multicolumn{2}{c|}{ St } & \multicolumn{2}{c|}{ L } & \multicolumn{1}{c|}{ \#P }\\
+\hline
+Compatibility & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
+\multicolumn{1}{c||}{-} & 
+\multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
+\multicolumn{1}{c||}{-} & 
+\multicolumn{1}{c}{F} & \multicolumn{1}{c}{S} & \multicolumn{1}{c}{F} & \multicolumn{1}{c|}{S} &
+\multicolumn{1}{c|}{-}\\ 
+\hline
+crewplanning(30) & 0.017 & 0.116 & 0.017 & 0.113 & 5 & 0.185 & 0.175 & 0.185 & 0.178 & 5 & - & - & - & - & 0 \\
+parking(10) & 0.042 & 0.042 & 0.042 & 0.042 & 8 & 0.09 & 0.098 & 0.09 & 0.098 & 9 & 0.117 & 0.122 & 0.102 & 0.111 & 6\\
+quantum circuit(10) &  0.035 & 0.035 & 0.035 & 0.035 & 5 & 0.072 & 0.072 & 0.072 & 0.079 & 5 & 0.131 & 0.126 & 0.066 & 0.075 & 5\\
+trucks(10) &0.05 & 0.081 & 0.05 & 0.077 & 8 & 0.059 & 0.063 & 0.056 & 0.058 & 9 & 0.066 & 0.048 & 0.032 & 0.023 & 8 \\
+turn and open(20) & 0.03 & 0.057 & 0.03 & 0.065 & 2 & 0.16 & 0.043 & 0.014 & 0.02 & 1 & - & - & - & - & 0 \\
+\hline
+Average & 0.035 & 0.066 & 0.035 & 0.066 & 28 & 0.113 & 0.09 & 0.083 & 0.087 & 29 & 0.105 & 0.099 &	0.067 &	0.07 & 19\\ 
+\hline
+\end{tabular}
+}
+\caption{Empirical results table: Compactness Scores}
+\label{table: results - compactness}
+\end{table}
+
+
 
 \section{Empirical Evaluation}
-In order to empirically evaluate our algorithm, our compilation takes a temporal planning task $\Pi$ and generates a set of $k$ diverse solutions using the plan elimination compilation described in Section 4, with OPTIC \cite{benton2012temporal} as the underlying solver. The TPS of each solution is obtained and $\MergeSet$ is computed, containing all the compatible time point pairs found in the naive TPN. We then construct a COP based on $\MergeSet$ in Minizinc \cite{nethercote2007minizinc} and use Gecode \cite{gecode} to solve it. As output, we receive a mapping from time point pairs to merge operations resulting in a new TPN.
+In order to empirically evaluate our algorithm, our compilation takes a temporal planning task $\Pi$ and generates a set of $k$ diverse solutions using the plan elimination compilation described in Section 4, with OPTIC \cite{benton2012temporal} as the underlying solver. The TPS of each solution is obtained and $\MergeSet$ is computed, containing all the compatible time point pairs found in the naive TPN.
+We then construct a COP based on $\MergeSet$ in Minizinc \cite{nethercote2007minizinc} and use Gecode \cite{gecode} to solve it. As output, we receive a mapping from time point pairs to merge operations resulting in a new TPN.
 %which has been optimized for compactness. 
 If no compatible pairs are found (i.e. $\MergeSet = \emptyset$) the naive TPN is returned as output. 
 
@@ -58,9 +84,20 @@ We evaluated all combinations of $k$ chosen from $\{2,4,8\}$, and both compatibi
 We evaluated our approach on all domains from the temporal track IPC in 2011, 2014, and 2018. Of these, we eliminated domains with actions whose durations depend on the current state, as this is not supported in a TPN.
 Out of these, we kept the domains where OPTIC was able to retrieve multiple diverse solutions for more than a single problem.
 
-We define a run on a specific problem to be successful if: \textit{i)} OPTIC is able to obtain $k$ diverse solutions to the problem and \textit{ii)} the generated TPN is more compact than the naive TPN. Otherwise, although the algorithm might have terminated successfully, we do not count it. Such a scenario occurs when the generated solutions in $\Pi$ are very different from one another and no compatible pairs are found between them, leading to no possible merges to the naive TPN. In the left hand side of Table \ref{table: table} we report the number of problems for which we were able to obtain $k$ solutions as \#N, and the number of successful runs as \#S.
+We define a run on a specific problem to be successful if: \textit{i)} OPTIC is able to obtain $k$
+diverse solutions to the problem and \textit{ii)} the generated TPN is more compact than the naive TPN.
+Otherwise, although the algorithm might have terminated successfully, we do not count it.
+Such a scenario occurs when the generated solutions in $\Pi$ are very different from one another 
+and no compatible pairs are found between them, leading to no possible merges to the naive TPN.
+Table \ref{table: results - success} showcases the number of problems for which we were
+able to obtain $k$ solutions as \#N, and the number of successful runs as \#S.
 
-We also report by how much our approach was able to reduce the size of the naive TPN. As different values of $k$ for the same problem lead to different sizes of the naive TPN, we evaluate the compactness of the generated TPN relative to the size of the naive TPN: $compactness(TPN) = 1 - \frac{|\mathcal{E}_{new}|}{|\mathcal{E}_{naive}|}$. In the right hand side of Table \ref{table: table} we show the average compactness over the commonly solved problems for each $k$ by the four different configurations of our approach. \#P denotes the number of commonly solved problems for each $k$.
+Table \ref{table: results - compactness} reports by how much our approach was able to reduce the size 
+of the naive TPN. As different values of $k$ for the same problem lead to different sizes of the naive TPN, 
+we evaluate the compactness of the generated TPN relative to the size of the naive 
+TPN: $compactness(TPN) = 1 - \frac{|\mathcal{E}_{new}|}{|\mathcal{E}_{naive}|}$. 
+We show the average compactness over the commonly solved problems for each $k$ by the four different 
+configurations of our approach. \#P denotes the number of commonly solved problems for each $k$.
 
 % In addition, though not detailed in this paper, our process encapsulates the possibility of accepting as input a Classical Planning instance along with a specification for each of the domain actions' duration. Given these, our process too can generate a TPN. The significance of this additional option is that from a simple classical PDDL model, the path to generating a Temporal Planning Network complete with valid solutions and schedules becomes very brief.
 % The classical implementation makes use of a top-$k$ planner \cite{katz2018novel} for obtaining the diverse solutions.
@@ -89,7 +126,7 @@ Before we analyze the results, we note that the larger $k$ is, the more IHs we h
 Therefore we expect that an increase in $k$ will result in more compatible pairs and thus in more merges and better compactness, but at the cost of more computational effort. 
 
 \section{Results Discussion}
-As the results in Table \ref{table: table} show, the above intuition is partially correct. 
+As the results in supplied tables show, the above intuition is partially correct. 
 First, as the intuition suggests, for larger $k$ the number of successes decreases. This can be explained by the rise in complexity of the COP due to many compatible pairs and the associated high memory consumption.
 However, on the other extreme, when $k$ is low there is a greater probability that the few diverse solutions generated will differ significantly from one another. Such instances may lead to either a low number of compatible pairs -- less merges and a worse compactness {\em or} finding no compatible pairs all together and resulting in an unsuccessful run. Indeed, this is what happened in the parking and trucks domains, where using $k=4$ resulted in more success than either $k=2$ or $k=8$.
 

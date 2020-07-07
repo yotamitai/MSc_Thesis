@@ -2182,9 +2182,43 @@
     <bcf:datasource type="file" datatype="bibtex">general.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">benton2012temporal</bcf:citekey>
-    <bcf:citekey order="2">nethercote2007minizinc</bcf:citekey>
-    <bcf:citekey order="3">gecode</bcf:citekey>
+    <bcf:citekey order="1">yoon2007ff</bcf:citekey>
+    <bcf:citekey order="2">little2007probabilistic</bcf:citekey>
+    <bcf:citekey order="3">hoffmann2005contingent</bcf:citekey>
+    <bcf:citekey order="4">kim2001executing</bcf:citekey>
+    <bcf:citekey order="5">Burke2014</bcf:citekey>
+    <bcf:citekey order="6">Timmons2015</bcf:citekey>
+    <bcf:citekey order="7">levine2018watching</bcf:citekey>
+    <bcf:citekey order="8">ingham2001reactive</bcf:citekey>
+    <bcf:citekey order="9">fox2003pddl2</bcf:citekey>
+    <bcf:citekey order="10">bryce2014landmark</bcf:citekey>
+    <bcf:citekey order="10">nguyen2012generating</bcf:citekey>
+    <bcf:citekey order="10">srivastava2007domain</bcf:citekey>
+    <bcf:citekey order="10">katz2019reshaping</bcf:citekey>
+    <bcf:citekey order="11">katz2019reshaping</bcf:citekey>
+    <bcf:citekey order="12">PDDL</bcf:citekey>
+    <bcf:citekey order="13">fox2003pddl2</bcf:citekey>
+    <bcf:citekey order="14">bryce2014landmark</bcf:citekey>
+    <bcf:citekey order="15">Coman2011GeneratingMetrics</bcf:citekey>
+    <bcf:citekey order="16">katz2018novel</bcf:citekey>
+    <bcf:citekey order="17">katz2019reshaping</bcf:citekey>
+    <bcf:citekey order="18">dechter1991temporal</bcf:citekey>
+    <bcf:citekey order="19">levine2018watching</bcf:citekey>
+    <bcf:citekey order="20">levine2018watching</bcf:citekey>
+    <bcf:citekey order="21">conrad2010flexible</bcf:citekey>
+    <bcf:citekey order="22">katz2019reshaping</bcf:citekey>
+    <bcf:citekey order="23">katz2018novel</bcf:citekey>
+    <bcf:citekey order="24">katz2019reshaping</bcf:citekey>
+    <bcf:citekey order="25">katz2018novel</bcf:citekey>
+    <bcf:citekey order="26">katz2018novel</bcf:citekey>
+    <bcf:citekey order="27">levine2018watching</bcf:citekey>
+    <bcf:citekey order="28">benton2012temporal</bcf:citekey>
+    <bcf:citekey order="29">nethercote2007minizinc</bcf:citekey>
+    <bcf:citekey order="30">gecode</bcf:citekey>
+    <bcf:citekey order="31">levine2018watching</bcf:citekey>
+    <bcf:citekey order="32">kim2001executing</bcf:citekey>
+    <bcf:citekey order="33">katz2018novel</bcf:citekey>
+    <bcf:citekey order="34">DBLP:conf/aips/BrafmanD08</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

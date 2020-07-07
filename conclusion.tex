@@ -1,25 +1,38 @@
-\chapter{Conclusion and open questions}
+\chapter{Final Remarks \& Open Questions}
 \label{chap:conclusion}
 
-\section{Conclusion and open questions}
-We have presented the first approach for automatically generating Temporal Planning Networks from a description of a planning task. This makes the useful tools based on the TPN formalism, such as the Pike executive \cite{levine2018watching}, much more broadly applicable, as there is no need to manually generate a TPN or RMPL program \cite{kim2001executing}. We have also 
-adapted the plan reformulation elimination \cite{katz2018novel} to the temporal setting, thus creating the first diverse temporal planner.
-%We have thus shifted the task of generating a TPN from manual to automatic and in doing so simplified the requirements needed for constructing a TPN by solely requiring a PDDL formalism.
-%Doing so, we have lowered the entry barrier of this technology in various task planning based fields.
-%Furthermore, in this work, we have expanded the territory of diverse planning to the temporal domain.
+\section{Final Remarks}
+We have presented the first approach for automatically generating Temporal Planning 
+Networks from a description of a planning task. This makes the useful tools based 
+on the TPN formalism, such as the Pike executive \cite{levine2018watching}, much more
+broadly applicable, as there is no need to manually generate a TPN or RMPL 
+program \cite{kim2001executing}. We have also 
+adapted the plan reformulation elimination \cite{katz2018novel} to the temporal
+setting, thus creating the first diverse temporal planner.
 
-In this paper, we focused on fully controllable TPNs. In future work, we will address the uncertainty inherent in some domains, such as human-robot teamwork -- one of the original motivations for the TPN formalism. In order to do this, we intend to use a multi-agent formalism, such as {\sc MA-STRIPS} \cite{DBLP:conf/aips/BrafmanD08}, and define which agents are under our control and which are not. The objective here will be to generate a TPNU.
+\section{Open Questions}
+In this paper, we focused on fully controllable TPNs, that is we assume all the
+decisions are ours to make as opposed to choices made by the environment. 
+In future work, we will address the uncertainty inherent in some domains, 
+such as human-robot teamwork -- one of the original motivations for the TPN formalism.
+In order to do this, we intend to use a multi-agent formalism, such as 
+{\sc MA-STRIPS} \cite{DBLP:conf/aips/BrafmanD08}, and define which agents are 
+under our control and which are not. The objective here will be to generate a TPNU.
 
-%As for future work, we intend to focus on determining which time points in the generated TPN are controllable and which are not, thus adding the layer of uncertainty (as mentioned in the TPNU definition) to the process outcome.
 
+Additionally, the objective we optimized here, minimizing the size of the resulting TPN,
+is only one possible objective. In the context of human-robot teamwork, one may want
+to optimize for some human-focused metrics, such as 
+the ease of explaining the TPN to the human, the mental effort needed to keep track
+of the current state of execution, and the flexibility given to the human at any given
+moment during execution.
 
+Finally, as previously mentioned, TPNUs can serve as a middle ground between
+contingent planning and conformant planning or naive replanning. 
+We intend to explore using such automatically generated TPNUs in planning under 
+uncertainty, where a TPNU is generated, and executed until something outside its
+specification occurs, when a new TPNU is synthesized.
 
-%We will continue to explore other metrics for defining the quality of a TPN, such as the number of valid solutions in encompasses, as mentioned in the introduction.
-Additionally, the objective we optimized here, minimizing the size of the resulting TPN, is only one possible objective. In the context of human-robot teamwork, one may want to optimize for some human-focused metrics, such as 
-%We will investigate what makes TPNs better for humans to execute, together with a robotic teammate. This includes 
-the ease of explaining the TPN to the human, the mental effort needed to keep track of the current state of execution, and the flexibility given to the human at any given moment during execution.
-
-Finally, as previously mentioned, TPNUs can serve as a middle ground between contingent planning and conformant planning or naive replanning. We intend to explore using such automatically generated TPNUs in planning under uncertainty, where a TPNU is generated, and executed until something outside its specification occurs, when a new TPNU is synthesized.
 
 %In addition, we intend to investigate the possibility of generating {\em recommended} solutions based on the output TPN. Such solutions will take into account the structure of the TPN for determining certain attributes. For example the TPN path with the most possible valid solutions branching out of its time points can be recommended as the {\em safest} solution, supplying more flexibility for uncontrollable situations.
 
