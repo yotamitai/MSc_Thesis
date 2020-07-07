@@ -1,0 +1,7 @@
+\section*{Abstract}
+Robots operating in the real world must deal with uncertainty, be it due to working with humans who are unpredictable, or simply because they must operate in a dynamic environment.
+Ignoring the uncertainty could be dangerous, while accounting for all possible outcomes, as in contingent planning, is often computationally infeasible.
+One possibility, which lies between ignoring the uncertainty completely and addressing it completely is to use flexible plans with choice, formulated as Temporal Planning Networks (TPNs). This approach has been successfully demonstrated to work in human-robot teaming using the Pike executive, an online executive that
+unifies intent recognition and plan adaptation.
+However, one of the main challenges to using Pike is the need to manually specify the TPN. In this paper, we address this challenge by describing a technique for automatically synthesizing a TPN which covers multiple possible executions for a given temporal planning problem specified in PDDL 2.1. Our approach starts by using a diverse planner to generate multiple plans, and then merges them into a single TPN. As there were no available diverse planners for temporal planning, we first show how to adapt existing diverse planning based on top-$k$ planning to the temporal setting.
+We then show how to merge the diverse plans into a single TPN using constraint optimization. Finally, an empirical evaluation on a set of IPC benchmarks shows that our approach scales well, and generates TPNs which can generalize the set of plans they are generated from.

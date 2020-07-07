@@ -12,7 +12,7 @@ A Temporal Planning problem modeled in the propositional subset of PDDL 2.1 \cit
 \textbf{Var}  & \textbf{Definition} \\
 \hline
 \\
-$F$:     &  {The domain facts. A set of Boolean propositions, s.t $S$, the set of all possible states is then all the subsets of $F$, meaning $\mid S \mid = 2^F$ states.}  \\
+$F$:     &  {The domain facts. A set of Boolean propositions. The set of all states $S$ is then all the possible subsets of $F$, meaning $\mid S \mid = 2^F$ states.}  \\
 \\
     $A$:     & {The set of durative actions. Each durative action $a \in A$ has a duration $\text{dur}(a) \in [\text{dur}_{min}(a), \text{dur}_{max}(a)]$ and is described by $a=\langle \text{pre}_{\vdash}(a), \text{eff}_{\vdash}(a),\text{inv}(a),\text{pre}_{\dashv}(a), \text{eff}_{\dashv}(a)\rangle$, where:
     \begin{itemize}
