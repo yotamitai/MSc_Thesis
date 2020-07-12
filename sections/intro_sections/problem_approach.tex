@@ -2,9 +2,9 @@
 \label{intro: Problem Approach}
 
 Our solution to the task at hand relies on obtaining multiple dissimilar solutions that solve the same Temporal Planning problem.
-This scheme is known as Diverse Planning. Although the problem of attaining multiple diverse solutions is well studied, all approaches refer to Classical Planning problems, while none address the temporal domain. Therefore, unfortunately, none of the current available off-the-shelf diverse planners  \cite{bryce2014landmark,nguyen2012generating,srivastava2007domain,katz2019reshaping} fit our requirements. Thus, Our first step is to describe a diverse temporal planner, based on adapting the top-$k$ based diverse planner \cite{katz2019reshaping} to the temporal setting. 
+This scheme is known as Diverse Planning. Although the problem of attaining multiple diverse solutions is well studied, all approaches refer to classical planning problems, while none address the temporal domain. Therefore, unfortunately, none of the current available off-the-shelf diverse planners  \cite{bryce2014landmark,nguyen2012generating,srivastava2007domain,katz2019reshaping} fit our requirements. Thus, Our first step is to describe a diverse temporal planner, based on adapting the top-$k$ based diverse planner \cite{katz2019reshaping} to the temporal setting. 
 
-After the dissimilar plans are obtained, they are passed to our process and merged into a single representation. 
+After the dissimilar plans are obtained, they are merged into a single TPN. 
 The merging algorithm is based on identifying sets of points along the different solutions which \emph{can} be merged together based on criteria that we define.
 
 Lastly, we choose which of these points \emph{should} be merged by modeling and solving a Constraint Optimization Problem (COP). The result is a single TPN that encompass all original solutions and, if possible, finds additional ones.

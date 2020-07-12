@@ -1,6 +1,6 @@
 \subsection{Merge Selection}
 \label{generating: merge selection}
-Given a naive TPN and it's corresponding $\MergeSet$, our algorithm must now decide which 
+Given a naive TPN and its corresponding $\MergeSet$, our algorithm must now decide which 
 merge operations to initiate and at what order. 
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
@@ -52,5 +52,5 @@ The Loose configuration allows more freedom for applying merges but must make su
 \textit{i)} $m_{i, j} \implies p_i \neq p_j$ \textit{ii)} $m_{i, j} \wedge m_{i, k} \implies p_j \neq p_k $ \textit{iii)} $ s_i = s_j \implies p_i \neq p_j$
 
 % the objective
-Lastly, the objective function of the COP is to maximize the number of elements in $S$ who's value differs from their index, in other words we want to count the number of IHs which were merged. Formally: 
+Lastly, the objective function of the COP is to maximize the number of elements in $S$ whose value differs from their index, in other words we want to count the number of IHs which were merged. Formally: 
 $f = Max \sum_{i=0}^{N} \mathbbm{1} \;|\;s_i \neq i$

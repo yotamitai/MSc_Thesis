@@ -3,7 +3,7 @@
 
 Our approach to diverse temporal planning builds upon the top-$k$ approach in \cite{katz2019reshaping} using a {\em plan forbidding reformulation} as in \cite{katz2018novel} . 
 
-The top-$k$ approach defines metrics in order to measure how close plans are to the best subset of all known plans, while the forbidding reformulation constitutes a diverse planning algorithm that instead of modifying the planner, in order to find a dissimilar solution, modifies the planning task itself. The reformulation occurs after each iteration (after which a plan is found) and alters the planning task in such a way as to forbid the possibility of finding the same solution that was obtained in the previous iteration.
+The top-$k$ approach defines metrics in order to measure how close plans are to the best subset of all known plans, while the forbidding reformulation constitutes a diverse planning algorithm that instead of modifying the planner, in order to find a dissimilar solution, modifies the planning task itself. The reformulation occurs after each iteration (during which a new plan is found) and alters the planning task in such a way as to forbid the possibility of finding the same solution that was obtained in the previous iteration.
 %%
 
 The main challenge we address here is that temporal plans are not a sequence of instantaneous happenings (IHs), but rather a schedule, and thus the top-$k$ approach does not apply directly. Therefore, we first define the {\em temporal plan skeleton} of a solution to a temporal planning task.
