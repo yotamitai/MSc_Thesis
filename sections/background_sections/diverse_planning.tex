@@ -1,6 +1,11 @@
 \subsection{Diverse Planning}
 \label{background: Diverse}
-Diverse planning is a method for obtaining multiple dissimilar solutions to the same planning task. It is commonly used in decision support scenarios where a human analyst needs to understand the space of possible plans or has difficulty specifying the planning domain model that exactly matches their application. The diversity between plans in a plan set $\Lambda$ is measured by the average distance between them. Previous literature such as \cite{bryce2014landmark} discussed how to best take advantage of plan characteristics to compare and measure this distance using domain-independent criteria.
+Diverse planning is a method for obtaining multiple dissimilar solutions to the same planning task.
+ It is commonly used in decision support scenarios where a human analyst needs to understand the space 
+of possible plans or has difficulty specifying the planning domain model that exactly matches their application.
+The diversity between plans in a plan set $\Lambda$ is measured by the average distance between them.
+Previous literature such as \cite{bryce2014landmark} discussed how to best take advantage of plan characteristics 
+to compare and measure this distance using domain-independent criteria such as action-sets, states, causal links and landmarks.
 
 % such as shown in Table \ref{tab:diversity measures}.
 
@@ -23,10 +28,26 @@ Diverse planning is a method for obtaining multiple dissimilar solutions to the 
 % \label{tab:diversity measures}
 % \end{table}
 
-Each such criteria has its own distance metric $D(\pi,\pi')$ to calculate the dissimilarity between two given plans. 
+Each such criteria has its own distance metric $D(p,p')$ to calculate the dissimilarity between two given plans $p,p'$. 
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+For instance, Given two plans $p,p'$ where each plan consists of a sequence of actions,
+we can evaluate these to obtain a sequence of states $s_0,s_1..s_n \& s_0',s_1'..s_m$ for each plan. 
+The distance between a pair of states can then be computed as: 
+\[S(s,s') = \frac{\mid s \Delta s' \mid}{\mid s \cup s' \mid}\]
+Where $\Delta$ is the symmetric difference operator.
+To account for difference in plan length, two methods are suggested.
+The first method assumes $k \leq k'$ and each state $s_{k'+1}..s_k$ is considered to contribute maximally (i.e one unit) 
+to the difference between the plans:
+\[D_{S}(p,p') = \frac{1}{k} \times \bigg[\sum^k_{i=1} S(s_i,s'_i) + k'-k\bigg]\]
+The second method assumes the shorter plan simply stays in the goal state $s_g$ for the rest of the duration of the longer plan:
+\[D_{S}(p,p') = \frac{1}{k} \times \bigg[\sum^{k-1}_{i=1} S(s_i,s'_i) + \sum^{k'}_{i=k} S(s_k,s'_i)\bigg] \]
+
+\end{tcolorbox}
+
 
 \paragraph{The Maximal Plan Diversity Problem}
-\textit{Given a plan distance metric $D$, a number $k$ and a planning problem instance $P$, obtain a collection of $k$ solution plans $\pi_1, \pi_2...\pi_k \in \Lambda$ solving $P$, such that no other set of $k$ solution plans $\Lambda'$ solving $P$ upholds $Div(\Lambda) < Div(\Lambda')$ } 
+\textit{Given a plan distance metric $D$, a number $k$ and a planning problem instance $P$, obtain a collection of $k$ solution plans $p_1, p_2...p_k \in \Lambda$ solving $P$, such that no other set of $k$ solution plans $\Lambda'$ solving $P$ upholds $Div(\Lambda) < Div(\Lambda')$ } 
 \\
 Finding the maximum set can be impossible depending on how $D$ is defined\cite{Coman2011GeneratingMetrics}. Therefore, a relaxation of this problem is solved instead, where a distance metric D is taken into account during plan set generation, but maximal plan diversity is not guaranteed.
 

@@ -410,9 +410,9 @@ INPUT /home/yotama/Local_Git/Latex/MSc/sections/background_sections/temporal_pla
 INPUT /home/yotama/Local_Git/Latex/MSc/sections/background_sections/temporal_planning.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /home/yotama/Local_Git/Latex/MSc/sections/background_sections/diverse_planning.tex
 INPUT /home/yotama/Local_Git/Latex/MSc/sections/background_sections/diverse_planning.tex
 INPUT /home/yotama/Local_Git/Latex/MSc/sections/background_sections/pike_TPNs.tex

@@ -1,9 +1,23 @@
 \section{Automated Planning}
 \label{background: automated}
-Automated Planning is the model-based branch of Artificial Intelligence (AI) focused on obtaining a solution, described through a sequence of actions, to a certain task using the knowledge of the world at hand.\\
-More specifically, given a model describing the world and the interactions available to agents in it, including their corresponding effects on it, we can describe an initial state and a goal state of the world and find a solution that transitions between them, if such exists. This solution constitutes a sequence of actions, denoted from now on as a "Plan", that if executed accordingly by the domain agents, promises the arrival at the goal state. Finding such plans is not a trivial issue and is a task reserved for a family of complex solvers called Planners.\\
-Planners are currently seen as automated solvers for precise classes of mathematical models represented in compact form. A typical planner takes three inputs: a description of the initial state of the world (initial state), a description of the desired goals (goal state), and a set of actions that the executor (agent) is able to perform, all encoded in a formal language such as PDDL \cite{PDDL}. 
-Planners are in  general domain-independent in the sense that they do not know what the variables, actions, and domain stand for, and for any such description they must decide effectively which actions to initiate in order to achieve the goals for the given planning task. The planner produces an ordered set of actions that leads from the initial state to a state satisfying all the goals. 
+Automated Planning is the model-based branch of Artificial Intelligence (AI) focused on obtaining a solution, described through
+ a sequence of actions, to a certain task using the knowledge of the world at hand.\\
+More specifically, given a model describing the world and the interactions available to agents in it, including their 
+corresponding effects on it, we can describe an initial state and a goal state of the world and find a solution that 
+transitions between them, if such exists. This solution constitutes a sequence of actions, denoted from now on as a "Plan", 
+that if executed accordingly by the domain agents, promises the arrival at the goal state. Finding such plans is not a trivial 
+issue and is a task reserved for a family of complex solvers called Planners.\\
+Planners are currently seen as automated solvers for precise classes of mathematical models represented in compact form. A typical 
+planner takes three inputs: a description of the initial state of the world (initial state), a description of the desired goals (goal state),
+ and a set of actions that the executor (agent) is able to perform, all encoded in a formal language such as PDDL \cite{PDDL}. 
+Planners are in  general domain-independent in the sense that they do not know what the variables, actions, and domain stand for,
+and for any such description they must decide effectively which actions to initiate in order to achieve the goals for the given 
+planning task. The planner produces an ordered set of actions that leads from the initial state to a state satisfying all the goals. 
 
+
+\begin{definition}[\textbf{Instantanius Happenings}]
+    
+    
+\end{definition}
 
 % For the sake of clarity, we will describe a simple planning formalism, STRIPS\cite{STRIPS}, although we make use of the more expressive formalism PDDL $2.1$ further discussed in section \ref{background: Temporal}.
