@@ -79,6 +79,8 @@ If no compatible pairs are found (i.e. $\MergeSet = \emptyset$) the naive TPN is
 
 We evaluated all combinations of $k$ chosen from $\{2,4,8\}$, and both compatibility methods 
 (Full \& Semi denoted as F,S) and merging transitivity (Strict \& Loose denoted as St,L). Thus, for each problem, we ran the diverse planner 3 times (for the different values of $k$), and then ran 4 different versions of our COP (for the different compatibility and transitivity). The experiments were performed on Intel i7-7700K 32GB RAM, with a time limit of 30min for generating the diverse solutions and 5min for the COP task.
+Surpassing the 30min time limit for obtaining diverse solutions results in a failed run, while surpassing the 5min limit on the COP results in the best solution found so far (i.e. not proven to be an optimal solution) or the naive TPN if no solution at all was found in this time.
+ 
 
 
 We evaluated our approach on all domains from the temporal track IPC in 2011, 2014, and 2018. Of these, we eliminated domains with actions whose durations depend on the current state, as this is not supported in a TPN.
@@ -137,7 +139,8 @@ This increase in the number of possibilities leads to an increase in the difficu
 On the other hand, the extra possibilities allow for more merges, and thus for better compactness. This is especially evident for $k=2$, where a single merge contributes more to the compactness than for higher values of $k$, since it involves time points from a higher proportion of the original solutions. 
 
 
-Comparing using strict transitivity to loose transitivity, the former is a stricter constraints, thus pruning the space of possible solutions. With lower values of $k$, this pruning makes little difference, implying that the best solutions are not typically not pruned by this. With higher values of $k$ this pruning reduces the size of the search space, allowing the solver to find better solutions in the alloted time, at the cost of a slight reduction in the success count. 
+
+Comparing using strict transitivity to loose transitivity, the former is applies stricter constraints, thus pruning the space of possible solutions. With lower values of $k$, this pruning makes little difference, implying that the best solutions are not typically pruned by this. With higher values of $k$ this pruning reduces the size of the search space, allowing the solver to find better solutions in the allotted time, at the cost of a slight reduction in the success count. 
 
 
 % As can be expected, the more diverse plans we wish to generate the harder the task becomes and the coverage rate drops with the increase in $k$.  
