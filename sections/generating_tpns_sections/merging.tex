@@ -92,15 +92,21 @@ We next describe how we choose which time points from the naive TPN to merge.
 
 
 \subsubsection{Merging Time Points in the TPN} 
-While it is theoretically possible to merge any two time points in the TPN,
- it is likely a bad idea to merge two random time points. 
+While it is theoretically possible to merge any two time points in the TPN, it is likely a bad idea to merge two random time points. 
 
-Some intuitive approaches include \textit{i)} comparing the underlying PDDL states
-of time points and \textit{ii)} comparing ordered sequences of activities originating from time points.
-Unfortunately, both techniques fall short of accounting for important merges possibilities we wish to
-obtain.
-\todo[inline]{can elaborate here if necessary}
-
+Some intuitive approaches include \textit{i)} comparing the underlying PDDL states of time points and \textit{ii)} comparing ordered sequences of activities originating from time points.
+Unfortunately, both techniques fall short of accounting for important merges possibilities we wish to obtain. We showcase one of these approaches bellow:\\
+\\
+\textbf{State Space Comparison:} This approach imposes that for two time points to be merged, they must hold the same set of fact literals $F$. Although this constraint does ensure that time points that are chosen for merge can indeed be merged, it is too restrictive.\\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+  \textit{Consider the merge witnessed in Figure \ref{fig:add_plans_from_merge}. The time points merged denoted the end of the activities whose purpose was to get Rob home. Once home, we can assume that the underlying PDDL states of $e^1_f$ and $e^2_f$ are similar and therefore this merge is plausible.\\
+  Now consider a similar scenario with one key difference --- there exists a literal indicating the amount of money Rob has spent.
+  Given that walking is free and a taxi costs money, we can expect that this state space comparison would rule out $e^1_f$ and $e^2_f$ as applicable for a merge.
+    }
+\end{tcolorbox}
+This example shows how sensitive this method can be to the way each domain was constructed. 
+Intuition would suggest that the solution to this issue is in locating the minimal set of literals that are of importance and only comparing those instead of all. This adjustment would work however the domain independent nature of automated planning makes finding this set of literals a nontrivial problem.
+\\ \\
 Thus we suggest a method to determine whether two time points should be merged based on the validity of the solutions originating from their merge.
 We introduce the {\em compatibility} attribute of two IHs. We define compatibility based on IHs as opposed to time points as the latter can change when merging time points in the TPN while the former remains a static property of the TPSs of the original diverse solutions.
 We define two notions of compatibility:
