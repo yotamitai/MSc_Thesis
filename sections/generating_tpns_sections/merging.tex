@@ -16,7 +16,7 @@ It is convenient to think of a TPN as a graph where time points are nodes connec
 By merging time points, additional solutions can be created, as demonstrated by the example in Figure \ref{fig:add_plans_from_merge}.
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{graphics/merge.png}
  \label{fig:add_plans_from_merge}
@@ -94,11 +94,9 @@ By merging time points, additional solutions can be created, as demonstrated by 
   }
 \end{tcolorbox}
 
-
 We next describe how we choose which time points from the naive TPN to merge.
 
-
-\subsubsection{Merging Time Points in the TPN} 
+\subsection{Merging Time Points in the TPN} 
 While it is theoretically possible to merge any two time points in the TPN, it is likely a bad idea to merge two random time points. 
 
 Some intuitive approaches include \textit{i)} comparing the underlying PDDL states of time points and \textit{ii)} comparing ordered sequences of activities originating from time points.
