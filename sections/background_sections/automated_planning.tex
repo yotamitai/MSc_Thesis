@@ -12,12 +12,10 @@ planner takes three inputs: a description of the initial state of the world (ini
  and a set of actions that the executor (agent) is able to perform, all encoded in a formal language such as PDDL \cite{PDDL}. 
 Planners are in  general domain-independent in the sense that they do not know what the variables, actions, and domain stand for,
 and for any such description they must decide effectively which actions to initiate in order to achieve the goals for the given 
-planning task. The planner produces an ordered set of actions that leads from the initial state to a state satisfying all the goals. 
-
-
-\begin{definition}[\textbf{Instantanius Happenings}]
-    
-    
-\end{definition}
+planning task. The planner produces an ordered set of actions that leads from the initial state to a state satisfying all the goals.
+\\ 
+The actions in the solution produced by the aforementioned planner are sequential and cannot take place in parallel to each other. 
+Therefore, it is common to treat these as instantaneous events that start and end immediately, and whose effect on the world occurs at once.
+We denote these events as \emph{Instantaneous Happenings} and make use of their properties latter on in the work.
 
 % For the sake of clarity, we will describe a simple planning formalism, STRIPS\cite{STRIPS}, although we make use of the more expressive formalism PDDL $2.1$ further discussed in section \ref{background: Temporal}.

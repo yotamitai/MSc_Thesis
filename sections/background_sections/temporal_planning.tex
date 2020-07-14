@@ -1,8 +1,16 @@
 \subsection{Temporal Planning}
 \label{background: Temporal}
 Temporal Planning is the extension of the classical planning regimes to the temporal setting.
- The classical formalism does not take into consideration the aspect of time and assumes actions taken in the world are instantaneous and take place in sequential order. In order to model more realistic problems there was need to control when each action should happen and allow actions to occur in parallel to one another. For Instance, the logistics domain would highly benefit from parallel actions if a robot equipped with two arms would be able to use them simultaneously and not one after the other. Adding time to the equation would also allow a factory robot to time his actions according to a shipment scheduled to arrive that same day. When involving time in a solution, the output is no longer a "plan" (sequence of actions) but a "schedule", mapping actions to their designated occurrence and execution stages.
-The third International Planning Competition (IPC), held in 2002, presented the planning community with the challenge of handling time. This necessitated the development of a modelling formalism capable of expressing temporal properties of planning domains which lead to the emergence of PDDL2.1
+ The classical formalism does not take into consideration the aspect of time and assumes actions taken in the world are instantaneous 
+ and take place in sequential order. In order to model more realistic problems there was need to control when each action should happen 
+ and allow actions to occur in parallel to one another. For Instance, the logistics domain would highly benefit from parallel actions 
+ if a robot equipped with two arms would be able to use them simultaneously and not one after the other. Adding time to the equation 
+ would also allow a factory robot to time his actions according to a shipment scheduled to arrive that same day. When involving time 
+ in a solution, the output is no longer a "plan" (sequence of actions) but a "schedule", mapping actions to their designated occurrence 
+ and execution stages.
+The third International Planning Competition (IPC), held in 2002, presented the planning community with the challenge of handling time. 
+This necessitated the development of a modelling formalism capable of expressing temporal properties of planning domains which lead to 
+the emergence of PDDL2.1
 
 A Temporal Planning problem modeled in the propositional subset of \\ 
 PDDL2.1 \cite{fox2003pddl2} is given by a tuple $\Pi = \langle F,A,I,G \rangle$:

@@ -7,27 +7,33 @@ A solution to a COP is a mapping from each variable to a value, selected from a 
 The constraints of the problem limit the variable values that can be assigned simultaneously.
 
 Formally a COP is a tuple $\langle X,D,C,O\rangle$: 
-\begin{table}[ht!]
-\centering
-\begin{tabularx}{\textwidth}{ c  X }
+\begin{itemize}
+    \item $X$: The set of variables.  
+    \item $D$: The set of their respective domains of values. 
+    \item $C$: The set of constraints.
+    \item $O$: The objective function.
+\end{itemize}
 
-\textbf{Var}  & \textbf{Definition} \\
-\hline
-\\
-$X$:     & \ {The set of variables.}  \\
-\\
-$D$:     & {The set of their respective domains of values. }       \\
-\\
-$C$:     & {The set of constraints.}      \\
-\\
-$O$:     & {The objective function.}      \\
-\\
+% \begin{table}[ht!]
+% \centering
+% \begin{tabularx}{\textwidth}{ c  X }
 
-\end{tabularx}
-\caption{Constraint Optimization Problem}
-\label{tab:COP}
-\end{table}
+% \textbf{Var}  & \textbf{Definition} \\
+% \hline
+% \\
+% $X$:     & \ {The set of variables.}  \\
+% \\
+% $D$:     & {The set of their respective domains of values. }       \\
+% \\
+% $C$:     & {The set of constraints.}      \\
+% \\
+% $O$:     & {The objective function.}      \\
+% \\
 
+% \end{tabularx}
+% \caption{Constraint Optimization Problem}
+% \label{tab:COP}
+% \end{table}
 
 Further on, in chapter \ref{chap: generating TPNS},  when constructing a TPN out of the diverse solutions we obtain, we will model the question of which time-points to merge between plans, such as to maximize our TPN's utility, as a COP.
 
