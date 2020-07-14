@@ -1,4 +1,4 @@
-\subsection{Merging Diverse Plans into a TPN}
+\section{Merging Diverse Plans into a TPN}
 \label{generating: merging}
 A naive merging approach for generating a TPN would be to create a single decision variable $v \in V$ corresponding to a choice 
 between the $k$ obtained solutions. 
@@ -15,67 +15,74 @@ The technique we describe here starts with the aforementioned naive TPN, but the
 It is convenient to think of a TPN as a graph where time points are nodes connected by constraints (edges).
 By merging time points, additional solutions can be created, as demonstrated by the example in Figure \ref{fig:add_plans_from_merge}.
 
-%\vspace{-1em}
-\begin{figure}%[H]
-    \centering
-    \begin{minipage}[t]{0.5\textwidth}  \centering
-        \begin{tikzpicture}[thick,scale=0.9, every node/.style={transform shape}]
-            % x node set with absolute coordinates
-            \node[state, accepting] (a) at (0,-1) {$I$};
-            \node[state] (b) at (1,0) {$e^1_s$};
-            \node[state] (c) at (3,0) {$e^1_f$};
-            \node[state] (d) at (4.5,0) {$e^1_s$};
-            \node[state] (e) at (6.5,0) {$e^1_f$};
-            \node[state] (f) at (1,-2) {$e^2_s$};
-            \node[state] (g) at (3,-2) {$e^2_f$};
-            \node[state] (h) at (4.5,-2) {$e^2_s$};  
-            \node[state] (i) at (6.5,-2) {$e^2_f$};
-            \node[state, accepting] (j) at (7.5,-1) {$G$};
-            % Directed edge
-            \draw (a) edge (b);
-            \draw (b) edge node[pos=0.5, sloped, above] {$Walk$} (c);
-            \draw (c) edge  (d);
-            \draw (d) edge node {$Order$} (e);
-            \draw (a) edge  (f);
-            \draw (f) edge node[pos=0.5, sloped, above] {$Taxi$} (g);
-            \draw (g) edge  (h);
-            \draw (h) edge node {$Cook$} (i);
-            \draw (i) edge (j);
-            \draw (e) edge (j);
-        \end{tikzpicture}
-    \end{minipage}
-    \centerline {\rule{.8\linewidth}{1pt}}
-    \begin{minipage}[t]{0.5\textwidth} \centering
-        \begin{tikzpicture}[thick,scale=0.9, every node/.style={transform shape}]
-            % x node set with absolute coordinates
-            \node[state, accepting] (a) at (0,-1) {$I$};
-            \node[state] (b) at (1,0) {$e^1_s$};
-            \node[state] (d) at (4.5,0) {$e^1_s$};
-            \node[state] (e) at (6.5,0) {$e^1_f$};
-            \node[state] (f) at (1,-2) {$e^2_s$};
-            \node[state] (h) at (4.5,-2) {$e^2_s$};  
-            \node[state] (i) at (6.5,-2) {$e^2_f$};
-            \node[state, accepting] (m) at (3,-1) {$e^1_f,e^2_f$};
-            \node[state, accepting] (j) at (7.5,-1) {$G$};
-            % Directed edge
-            \draw (a) edge (b);
-            \draw (b) edge node[pos=0.5, sloped, above] {$Walk$} (m);
-            \draw (m) edge  (d);
-            \draw (d) edge node[pos=0.5, sloped, above] {$Order$} (e);
-            \draw (a) edge  (f);
-            \draw (f) edge node[pos=0.5, sloped, above] {$Taxi$} (m);
-            \draw (m) edge  (h);
-            \draw (h) edge node[pos=0.5, sloped, above] {$Cook$} (i);
-            \draw (i) edge (j);
-            \draw (e) edge (j);
-        \end{tikzpicture}
-    \end{minipage}
-    \caption{Additional paths in the graph are created as a result of a merge. Choice time points are depicted with double circles.\\
-    \textbf{Top:} Two separate plans, number of possible paths: 2. \\
-    \textbf{Bottom:} Two merged plans, number of possible paths: 4.}
-    \label{fig:add_plans_from_merge}
-    \vspace{-4mm}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{graphics/merge.png}
+ \label{fig:add_plans_from_merge}
+\caption{Additional paths in the graph are created as a result of a merge.} 
 \end{figure}
+
+% \begin{figure}%[H]
+%     \centering
+%     \begin{minipage}[t]{0.5\textwidth}  \centering
+%         \begin{tikzpicture}[thick,scale=0.9, every node/.style={transform shape}]
+%             % x node set with absolute coordinates
+%             \node[state, accepting] (a) at (0,-1) {$I$};
+%             \node[state] (b) at (1,0) {$e^1_s$};
+%             \node[state] (c) at (3,0) {$e^1_f$};
+%             \node[state] (d) at (4.5,0) {$e^1_s$};
+%             \node[state] (e) at (6.5,0) {$e^1_f$};
+%             \node[state] (f) at (1,-2) {$e^2_s$};
+%             \node[state] (g) at (3,-2) {$e^2_f$};
+%             \node[state] (h) at (4.5,-2) {$e^2_s$};  
+%             \node[state] (i) at (6.5,-2) {$e^2_f$};
+%             \node[state, accepting] (j) at (7.5,-1) {$G$};
+%             % Directed edge
+%             \draw (a) edge (b);
+%             \draw (b) edge node[pos=0.5, sloped, above] {$Walk$} (c);
+%             \draw (c) edge  (d);
+%             \draw (d) edge node {$Order$} (e);
+%             \draw (a) edge  (f);
+%             \draw (f) edge node[pos=0.5, sloped, above] {$Taxi$} (g);
+%             \draw (g) edge  (h);
+%             \draw (h) edge node {$Cook$} (i);
+%             \draw (i) edge (j);
+%             \draw (e) edge (j);
+%         \end{tikzpicture}
+%     \end{minipage}
+%     \centerline {\rule{.8\linewidth}{1pt}}
+%     \begin{minipage}[t]{0.5\textwidth} \centering
+%         \begin{tikzpicture}[thick,scale=0.9, every node/.style={transform shape}]
+%             % x node set with absolute coordinates
+%             \node[state, accepting] (a) at (0,-1) {$I$};
+%             \node[state] (b) at (1,0) {$e^1_s$};
+%             \node[state] (d) at (4.5,0) {$e^1_s$};
+%             \node[state] (e) at (6.5,0) {$e^1_f$};
+%             \node[state] (f) at (1,-2) {$e^2_s$};
+%             \node[state] (h) at (4.5,-2) {$e^2_s$};  
+%             \node[state] (i) at (6.5,-2) {$e^2_f$};
+%             \node[state, accepting] (m) at (3,-1) {$e^1_f,e^2_f$};
+%             \node[state, accepting] (j) at (7.5,-1) {$G$};
+%             % Directed edge
+%             \draw (a) edge (b);
+%             \draw (b) edge node[pos=0.5, sloped, above] {$Walk$} (m);
+%             \draw (m) edge  (d);
+%             \draw (d) edge node[pos=0.5, sloped, above] {$Order$} (e);
+%             \draw (a) edge  (f);
+%             \draw (f) edge node[pos=0.5, sloped, above] {$Taxi$} (m);
+%             \draw (m) edge  (h);
+%             \draw (h) edge node[pos=0.5, sloped, above] {$Cook$} (i);
+%             \draw (i) edge (j);
+%             \draw (e) edge (j);
+%         \end{tikzpicture}
+%     \end{minipage}
+%     \caption{Additional paths in the graph are created as a result of a merge. Choice time points are depicted with double circles.\\
+%     \textbf{Top:} Two separate plans, number of possible paths: 2. \\
+%     \textbf{Bottom:} Two merged plans, number of possible paths: 4.}
+%     \label{fig:add_plans_from_merge}
+%     \vspace{-4mm}
+% \end{figure}
 
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
